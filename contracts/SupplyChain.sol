@@ -75,7 +75,7 @@ contract SupplyChain {
    PS: Uncomment the modifier but keep the name for testing purposes!
    */
    modifier forSale(uint sku){
-   requre(items[sku].state == 0 && items[sku].price >=0);
+   require(items[sku].state == 0 && items[sku].price >=0);
    _;
    }
    
